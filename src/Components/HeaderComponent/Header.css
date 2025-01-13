@@ -1,0 +1,19 @@
+.header{display: flex; justify-content: space-between; padding: 1em 6em;}
+.header .left{display: flex; gap: 4em; align-items: center;}
+.header .buttons{display: flex; align-items: center;}
+.header ul{display: flex; list-style: none; gap: 4em; font-weight: 500;}
+.header ul li:hover{color: rgb(136, 0, 106); cursor: pointer;}
+.header .buttons a{text-decoration: none; color: black; font-weight: 400; border: 1px solid black; padding: 0.5em 1em; border-radius: 2em 0 0 2em;}
+.header .buttons a:hover{background-color: black; color: white; transition: 200ms ease-in-out;}
+.header .buttons a2{text-decoration: none; color: white; font-weight: 300; background-color: black; border: 1px solid black; padding: 0.5em 3.7em; border-radius: 0 2em 2em 0; border-left: none;}
+.header .buttons a2:hover{background-color: #ffffff; color: black; transition: 200ms ease-in-out;} 
+.header .menu-icon img{width: 1.7em;}
+.header .menu-icon {display: flex; align-items: center; display: none;}
+
+@media (max-width: 1130px) {
+    .header ul {display: none;}
+    .header .buttons{font-size: 0.8em;}
+    .header .menu-icon {display: flex;margin-right: -3em;}
+    .header .left img{margin-left: -4em;}
+}
+
