@@ -1,3 +1,99 @@
 *{margin: 0; padding: 0; font-family: poppins;}
 
 .heroSection img{width: 100%;}
+.heroSection{position: relative;}
+.heroSection .texts{position: absolute; top: 14em; width: 45%; left: 5em;}
+.heroSection .texts h1{color: white; font-weight: 500; font-size: 3em; line-height: 1.3em;}
+.heroSection .texts p{color: rgba(255, 255, 255, 0.589); font-weight: 300; margin-top: 1.5em; margin-bottom: 2.8em;}
+.heroSection .texts a{text-decoration: none; color: rgb(128, 0, 96); border: solid rgb(128, 0, 96); border-width: 0.15em; padding: 0.6em 3em; border-radius: 2em; }
+.heroSection .texts a:hover{background-color: rgba(255, 255, 255, 0.87); transition: 200ms ease-in-out;}
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .heroSection .texts {
+      top: 5em;
+      width: 60%;
+      left: 3em;
+    }
+  
+    .heroSection .texts h1 {
+      font-size: 2.5em;
+    }
+  
+    .heroSection .texts p {
+      font-size: 0.9em;
+    }
+  
+    .heroSection .texts a {
+      font-size: 0.9em;
+      padding: 0.5em 2.5em;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .heroSection .texts {
+      top: 5em;
+      width: 70%;
+      left: 2em;
+    }
+  
+    .heroSection .texts h1 {
+      font-size: 2em;
+    }
+  
+    .heroSection .texts p {
+      font-size: 0.85em;
+    }
+  
+    .heroSection .texts a {
+      font-size: 0.8em;
+      padding: 0.5em 2em;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .heroSection .texts {
+      top: 3em;
+      width: 70%;
+      left: 2em;
+    }
+  
+    .heroSection .texts h1 {
+      font-size: 1.5em;
+    }
+  
+    .heroSection .texts p {
+      font-size: 0.85em;
+    }
+  
+    .heroSection .texts a {
+      font-size: 0.7em;
+      padding: 0.5em 2em;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .heroSection .texts {
+      top: 3em;
+      width: 90%;
+      left: 1em;
+    }
+  
+    .heroSection .texts h1 {
+      font-size: 1.5em;
+      line-height: 1.2em;
+    }
+  
+    .heroSection .texts p {
+      font-size: 0.75em;
+      width: 70%;
+
+    }
+  
+    .heroSection .texts a {
+      font-size: 0.7em;
+      padding: 0.4em 1.5em;
+    }
+  }

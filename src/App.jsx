@@ -11,7 +11,17 @@ function App() {
       <Header/>
       <div className='heroSection'>
         <img src={hero} alt="" />
+        <div className='texts'>
+          <h1>Train, enjoy and<br></br> live the experience</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore assumenda esse placeat tenetur eos nemo eum nihil eligendi? Illo eos consequuntur molestias totam vero cupiditate eius error cum a perspiciatis!</p>
+          <a href="">Join Altea Gym</a>
+        </div>
       </div>
+      
+      <div className='bodyContainer1'>
+        
+      </div>
+
     </>
   )
 }
