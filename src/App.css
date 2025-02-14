@@ -9,12 +9,31 @@
 .heroSection .texts a:hover{background-color: rgba(255, 255, 255, 0.87); transition: 200ms ease-in-out;}
 
 .bodyContainer1{background-color: rgba(0, 0, 0, 0.089); text-align: center;}
-.bodyContainer1 .cardContainer{display: flex; justify-content: center; gap: 6em; margin-top: 3em; align-items: center;}
-.bodyContainer1 h2{padding-top: 2em; margin-top: -0.6em; font-size: 2rem; font-weight: 500;}
+.bodyContainer1 .cardContainer{display: flex; justify-content: center; gap: 6em; margin-top: 3em; align-items: center; flex-wrap: wrap;}
+.bodyContainer1 h2{padding-top: 2em; margin-top: -0.6em; font-size: 2rem; font-weight: 500; text-transform: uppercase;}
 .bodyContainer1 .card h6{font-weight: 400; margin-top: 2em; padding-bottom: 5em;}
 
+.bodyContainer2{text-align: center;}
+.bodyContainer2 h2{padding-top: 2em; font-weight: 600; text-transform: uppercase;}
+.bodyContainer2 p{font-size: 0.8rem; margin-top: 0.7em;}
+.bodyContainer2 .cardContainer{display: flex; gap: 2em; width: 85%; margin-left: auto; margin-right: auto; margin-top: 2.5em; flex-wrap: wrap;}
+.bodyContainer2 .card{border: 2px solid rgb(212, 212, 212); border-radius: 1.2em;}
+.bodyContainer2 .cards{width: 20em; margin-left: auto; margin-right: auto;}
+.bodyContainer2 .cardContainer .card h3{text-transform: uppercase; font-weight: 600; padding-top: 1em; background-color: rgb(212, 212, 212); border-radius: 0.8em 0.8em 0em 0em; padding-bottom: 1em;}
+.bodyContainer2 .cardContainer .card h6{text-align: left; margin-top: 2.5em; width: 70%; margin-left: auto; margin-right: auto; color: rgba(0, 0, 0, 0.808);}
+.bodyContainer2 .cardContainer .card .price{display: flex; align-items: baseline; justify-content: center; margin-top: 2em;}
+.bodyContainer2 .cardContainer .card .price h4{font-size: 1.3rem; font-weight: 600;}
+.bodyContainer2 .cardContainer .card .price h5{font-weight: 500; color:rgba(0, 0, 0, 0.568);}
+.bodyContainer2 .cardContainer .card a{color: purple; text-decoration: none; border: 1px solid purple; padding: 0.5em 2.5em; border-radius: 0.6em; display: inline-block; margin-top: 1.5em; margin-bottom: 2.5em;} 
 
-/* Media Queries for Responsiveness */
+.bodyContainer2 .card3{border: 2px solid rgb(99, 0, 82); border-radius: 1.2em;}
+.bodyContainer2 .cardContainer .card3 h3{text-transform: uppercase; font-weight: 600; padding-top: 1em; background: linear-gradient(to Right,black, rgb(124, 0, 108)); border-radius: 0.8em 0.8em 0em 0em; padding-bottom: 1em; color: white;}
+.bodyContainer2 .cardContainer .card3 h6{text-align: left; margin-top: 2.5em; width: 70%; margin-left: auto; margin-right: auto; color: rgba(0, 0, 0, 0.808);}
+.bodyContainer2 .cardContainer .card3 .price{display: flex; align-items: baseline; justify-content: center; margin-top: 2em;}
+.bodyContainer2 .cardContainer .card3 .price h4{font-size: 1.3rem; font-weight: 600;}
+.bodyContainer2 .cardContainer .card3 .price h5{font-weight: 500; color:rgba(0, 0, 0, 0.568);}
+.bodyContainer2 .cardContainer .card3 a{color: rgb(255, 255, 255); text-decoration: none; border: 1px solid purple; padding: 0.5em 2.5em; border-radius: 0.6em; display: inline-block; margin-top: 1.5em; margin-bottom: 2.5em; background: linear-gradient(to Right, black , rgb(109, 0, 91));} 
+/* Media Queries for Responsveness */
 @media (max-width: 1024px) {
     .heroSection .texts {
       top: 5em;

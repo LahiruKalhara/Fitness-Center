@@ -52,7 +52,46 @@ function App() {
             <h5>Providers<br></br>of happiness</h5>
             <h6>Feel good about yourself</h6>
           </div>
-          
+        </div> 
+      </div>
+
+      <div className='bodyContainer2'>
+        <h2>Choose your plan</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br></br>architecto blanditiis cupiditate dolorum ea expedita maxime ex amet quas, in eaque?</p>
+        <div className='cardContainer'>
+          <div className='cards card'>
+            <h3>Basic</h3>
+            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+            <div className='price'>
+              <h4>14.99$</h4>
+              <h5>/for 4 Weeks</h5>
+            </div>
+            <a href="">Get Started</a>
+          </div>
+          <div className='cards card'>
+            <h3>Basic</h3>
+            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+            <div className='price'>
+              <h4>14.99$</h4>
+              <h5>/for 4 Weeks</h5>
+            </div>
+            <a href="">Get Started</a>
+          </div>
+          <div className='cards card3'>
+            <h3>Basic</h3>
+            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+            <div className='price'>
+              <h4>14.99$</h4>
+              <h5>/for 4 Weeks</h5>
+            </div>
+            <a href="">Get Started</a>
+          </div>
         </div>
       </div>
 
