@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './App.css'
 import Header from './Components/HeaderComponent/Header'
 import hero from '../src/images/Picture_woman@1x.png'
@@ -8,16 +8,25 @@ import card3 from '../src/images/Icon@1x (2).png'
 import card4 from '../src/images/Icon@1x (3).png'
 import card5 from '../src/images/Icon@1x (4).png'
 import body3 from '../src/images/Picture_men@1x.png'
-import Double from '../src/images/double-quote-sans-left-24.png'
 import Footer from './Components/FooterComponent/Footer'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
   const [count, setCount] = useState(0)
-
+  
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+  
+  
   return (
     <>
-      <Header />
-      <div className='heroSection'>
+      <Header/>
+      <div className='heroSection' data-aos="fade-up" >
         <img src={hero} alt="" />
         <div className='texts'>
           <h1>Train, enjoy and<br></br> live the experience</h1>
@@ -26,7 +35,7 @@ function App() {
         </div>
       </div>
 
-      <div className='bodyContainer1'>
+      <div className='bodyContainer1' data-aos="fade-up">
         <h2>Our Reason for Being</h2>
         <p>How can we help you?</p>
         <div className='cardContainer'>
@@ -55,10 +64,10 @@ function App() {
             <h5>Providers<br></br>of happiness</h5>
             <h6>Feel good about yourself</h6>
           </div>
-        </div>
+        </div> 
       </div>
 
-      <div className='bodyContainer2'>
+      <div className='bodyContainer2' data-aos="fade-up">
         <h2>Choose your plan</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br></br>architecto blanditiis cupiditate dolorum ea expedita maxime ex amet quas, in eaque?</p>
         <div className='cardContainer'>
@@ -98,7 +107,7 @@ function App() {
         </div>
       </div>
 
-      <div className='bodyContainer3'>
+      <div className='bodyContainer3' data-aos="fade-up">
         <img src={body3} alt="" />
         <div className='texts'>
           <h2>Get fit in any time and place</h2>
@@ -107,39 +116,12 @@ function App() {
         </div>
       </div>
 
-      <div className="bodyContainer4">
-        <div className="left">
-          <h1>Altea Reviews</h1>
-          <h5>Read what our partners say about Altea.</h5>
-          <h2>4,6</h2>
-          <p>Rating of all reviews</p>
-          <a href="#">SEE ALL REVIEWS</a>
-        </div>
-
-        <div className="right">
-          <div className="reviewContainer">
-            <div className="card small">
-              <img src={Double} alt="" />
-              <p>Attentive and friendly staff. I love training there daily.</p>
-            </div>
-            <div className="card medium">
-              <img src={Double} alt="" />
-              <p>I love that they have so many clubs. I always go to two, the one closest to my home and the one to work.</p>
-            </div>
-            <div className="card large">
-              <img src={Double} alt="" />
-              <p>
-                Its most innovative machinery, its facilities, its monitors, and personal trainers make it without a doubt my
-                favorite gym. Unbeatable value for money.
-              </p>
-            </div>
-            <div className="card small">
-              <img src={Double} alt="" />
-              <p>Very complete and fun classes. I always go three times a week.</p>
-            </div>
-          </div>
-        </div>
+      <div className='bodyContainer4' data-aos="fade-up">
+          <h1>ALTEA REVIEWS</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aliquam debitis iure eaque temporibus tenetur beatae blanditiis minima esse, atque quo animi, totam magni a. A maxime quis ea explicabo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dignissimos soluta itaque quisquam reiciendis voluptate quaerat sunt ratione debitis distinctio, temporibus non vero, quos optio, doloribus adipisci odio ex animi.</p>
+          <a href="">See Reviews</a>
       </div>
+
       <Footer></Footer>
     </>
   )

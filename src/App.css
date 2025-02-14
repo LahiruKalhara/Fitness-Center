@@ -41,20 +41,11 @@
 .bodyContainer3 .texts p{color: white; font-weight: 200; width: 40em; margin-top: 1em;}
 .bodyContainer3 .texts a{text-decoration: none; color: white; background-color: rgb(100, 0, 95); padding: 0.7em 2.5em; border-radius: 3em; display: inline-block; margin-top: 2em;}
 
-.bodyContainer4{background-color: rgb(226, 226, 226); display: flex; padding: 5em; gap: 3em; align-items: center;}
-.bodyContainer4 .left{flex: 1;}
-.bodyContainer4 .left h1{text-transform: uppercase; font-weight: 600;}
-.bodyContainer4 .left h2{font-size: 2.5rem; font-weight: 600; color: rgb(96, 0, 116);}
-.bodyContainer4 .right{flex: 2; position: relative; display: flex; align-items: center;}
-.reviewContainer{display: flex; flex-direction: column; gap: 1em; height: 250px; overflow-y: auto; padding-right: 10px;}
-.card{display: flex; align-items: center; gap: 1em; background-color: white; padding: 1em; border-radius: 1em;}
-.card img{width: 20px; height: 20px;}
-.card.small{width: 40%;}
-.card.medium{width: 50%;}
-.card.large{width: 80%; background-color: rgb(96, 0, 116); color: white; font-weight: bold;}
-.reviewContainer::-webkit-scrollbar{width: 8px;}
-.reviewContainer::-webkit-scrollbar-track{background: #ddd; border-radius: 5px;}
-.reviewContainer::-webkit-scrollbar-thumb{background: rgb(96, 0, 116); border-radius: 5px;}
+.bodyContainer4{text-align: center; margin-top: 2em;}
+.bodyContainer4 p{width: 80%; margin-left: auto; margin-right: auto; margin-top: 1em;}
+.bodyContainer4 a{text-decoration: none; color: white; background-color: purple; padding: 0.7em 4em; display: inline-block; border-radius: 2em; margin-top: 2em;}
+.bodyContainer4 h1{font-weight: 600;}
+
 
 
 
