@@ -33,7 +33,108 @@
 .bodyContainer2 .cardContainer .card3 .price h4{font-size: 1.3rem; font-weight: 600;}
 .bodyContainer2 .cardContainer .card3 .price h5{font-weight: 500; color:rgba(0, 0, 0, 0.568);}
 .bodyContainer2 .cardContainer .card3 a{color: rgb(255, 255, 255); text-decoration: none; border: 1px solid purple; padding: 0.5em 2.5em; border-radius: 0.6em; display: inline-block; margin-top: 1.5em; margin-bottom: 2.5em; background: linear-gradient(to Right, black , rgb(109, 0, 91));} 
-/* Media Queries for Responsveness */
+
+.bodyContainer3{margin-top: 3em; position: relative;}
+.bodyContainer3 img{width: 100%;}
+.bodyContainer3 .texts{position: absolute; top: 5em; left: 5em;}
+.bodyContainer3 .texts h2{font-size: 2.2rem; font-weight: 500; text-transform: uppercase; color: white;}
+.bodyContainer3 .texts p{color: white; font-weight: 200; width: 40em; margin-top: 1em;}
+.bodyContainer3 .texts a{text-decoration: none; color: white; background-color: rgb(100, 0, 95); padding: 0.7em 2.5em; border-radius: 3em; display: inline-block; margin-top: 2em;}
+
+.bodyContainer4{background-color: rgb(226, 226, 226); display: flex; padding: 5em; gap: 3em; align-items: center;}
+.bodyContainer4 .left{flex: 1;}
+.bodyContainer4 .left h1{text-transform: uppercase; font-weight: 600;}
+.bodyContainer4 .left h2{font-size: 2.5rem; font-weight: 600; color: rgb(96, 0, 116);}
+.bodyContainer4 .right{flex: 2; position: relative; display: flex; align-items: center;}
+.reviewContainer{display: flex; flex-direction: column; gap: 1em; height: 250px; overflow-y: auto; padding-right: 10px;}
+.card{display: flex; align-items: center; gap: 1em; background-color: white; padding: 1em; border-radius: 1em;}
+.card img{width: 20px; height: 20px;}
+.card.small{width: 40%;}
+.card.medium{width: 50%;}
+.card.large{width: 80%; background-color: rgb(96, 0, 116); color: white; font-weight: bold;}
+.reviewContainer::-webkit-scrollbar{width: 8px;}
+.reviewContainer::-webkit-scrollbar-track{background: #ddd; border-radius: 5px;}
+.reviewContainer::-webkit-scrollbar-thumb{background: rgb(96, 0, 116); border-radius: 5px;}
+
+
+
+
+
+@media (max-width: 1222px){
+    .bodyContainer3 .texts{
+      top: 3em;
+    }
+
+    .bodyContainer3 .texts h2{
+      font-size: 2em;
+    }
+
+    .bodyContainer3 .texts p{
+      font-size: 0.9rem;
+    }
+
+    .bodyContainer3 .texts a{
+      font-size: 0.9em;
+    }
+}
+
+
+@media (max-width: 1000px){
+  .bodyContainer3 .texts{
+    position: sticky;
+    text-align: center;
+    left: 10em;
+  }
+
+  .bodyContainer3 .texts h2{
+    font-size: 2em;
+    color: black;
+  }
+
+  .bodyContainer3 .texts p{
+    font-size: 1rem;
+    color: black;
+    font-weight: 300;
+    margin-left: auto; margin-right: auto;
+  }
+
+  .bodyContainer3 .texts a{
+    font-size: 0.9em;
+
+  }
+}
+
+@media (max-width: 650px){
+  .bodyContainer3 .texts{
+    position: sticky;
+    text-align: center;
+    left: 10em;
+  }
+
+  .bodyContainer3 .texts h2{
+    font-size: 2em;
+    color: black;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .bodyContainer3 .texts p{
+    font-size: 1rem;
+    color: black;
+    font-weight: 300;
+    width: 80%;
+    margin-left: auto; margin-right: auto;
+  }
+
+  .bodyContainer3 .texts a{
+    font-size: 0.9em;
+
+  }
+}
+
+
+
 @media (max-width: 1024px) {
     .heroSection .texts {
       top: 5em;
